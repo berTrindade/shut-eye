@@ -1,11 +1,5 @@
 @CHARSET "ISO-8859-1";
 
-@font-face 
-{
-	font-family: 'Josefin Sans';
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-} 
-
 /* Reset all Margins and Padding */
 * 
 {
