@@ -65,7 +65,7 @@ fieldset
 	margin-bottom: 2px; 
 }
 
-form { margin: 2px 0; }
+form { margin: 2px auto; }
 
 form input
 {
