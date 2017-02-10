@@ -1,151 +1,61 @@
-@CHARSET "ISO-8859-1";
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
 
-/* Reset all Margins and Padding */
-* 
-{
-	margin: 0;
-	padding: 0;
-	font-family: Josefin Sans;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-}
+	<title>Welcome! | Shopping Cart</title>
+	
+	<link rel="icon" href="../img/shopping-cart-16x16.ico">
+	<link rel="stylesheet" href="../css/style.css">
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-/* html */
+	<div class="container">
+	
+		<header class="row-1 row"><h1>Shopping Cart</h1></header> <!-- End of Header -->
+			
+		<main class="row-2 row container">
+		
+			<div id="login" class="row-1">
+			
+				<h1 class="row-1">Login</h1>
+				
+				<form class="row-2" method="post">
+					<fieldset>
+						<input type="text" name="username" placeholder="Username" size="12" maxlength="30"/><br/>
+						<input type="password" name="password" placeholder="Password" size="12" />
+					</fieldset>
+					<input type="submit" value="Submit"/>
+				</form>
+				
+				<div id="login-help" class="row-3"><p>Forgot your password ? <a href=""> Click here.</a></p></div>
+				
+			</div> <!-- End login -->
+			
+		</main> <!-- End of Main -->
+		
+		<footer class="row-3 row">
+			<p>Copyright &copy; <script type="text/javascript">document.write((new Date()).getFullYear()); </script> - by Bernardo T. de Abreu<br/></p>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/berTrindade" target="_blank">Linkedin</a></li>
+				<li><a href="https://github.com/berTrindade/" target="_blank">Github</a></li>
+			</ul>
+		</footer> <!-- End of Footer -->
+	</div> <!-- End of Container -->
+	
+	<!-- <span>${message}</span> -->
+</body>
+</html>
 
-html, body { height: 100vh; }
 
-/* Interface */
+<!-- Use pseudo class selectors on div login -->
 
-.container
-{
-	display: grid;
-}
+	
 
-#container 
-{
-	display: grid;
-	background-color: #ffffff;
+	
 
-	text-align: center;
-	min-height: 100vh;
-	height: 100vh;
 
-  	grid-template-rows: auto 2fr auto;	
-}
 
-#main-subgrid
-{
-	display: grid;
-	align-items: center;
-}
-
-h1
-{
-	text-transform: uppercase;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-	color: #606060;
-}
-
-main h1 { font-size: 25px; }
-
-/* Grid layout */
-
-.grid-row { padding: 30px; }
-
-.header 
-{
-  grid-row: 1;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.main 
-{
-  grid-row: 2;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.footer 
-{
-  grid-row: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-/* Form */
-
-form fieldset 
-{ 
-	padding: 10px;
-	margin-bottom: 2px; 
-}
-
-form { margin: 2px 0; }
-
-input[type="text"], input[type="password"]
-{
-	display: block;
-	width: 100%;
-    padding: 10px;
-}
-
-div#login-help, input, legend { font-size: 18px; }
-
-input[type="submit"] 
-{
-	width: 100%;
-	height: 40px;
-} 
-
-div#login 
-{
-	margin: 0 auto;
-	padding: 10px;
-	border-top: 1px #606060 solid;
-	border-bottom: 1px #606060 solid;
-}
-
-div#login-help  
-{
-	width: 100%;
-	margin-top: 5px;
-	text-align: center;
-}
-
-div#login-help p a 
-{ 
-	text-decoration: none;
-	color: blue; 
-}
-
-div#login-help p a:hover { text-decoration: underline; }
-
-/* Footer */
-
-footer  
-{
-   font-size: 18px;
-   
-   /* line-height is the vertical distance 
-   	  between lines of text in a content block */
-   line-height: 22px;
-}
-
-footer ul li { display: inline; }
-
-footer ul li a
-{
-	color: blue;
-	text-decoration: none;
-}
-
-footer ul li a:hover { text-decoration: underline; }
 
