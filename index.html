@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Login</title>
+
+	<title>Welcome! | Shopping Cart</title>
 	
+	<link rel="icon" href="shopping-cart-16x16.ico">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	
-	<meta name="author" content="Bernardo T. de Abreu">
-	<meta name="description" content="Shopping Cart Web project">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-	<div id="container">
+	<div class="container">
 	
-		<header class="header grid-row"> 
-			<h1>Shopping Cart</h1>
-		</header> <!-- End of the Header -->
+		<header class="row-1 row"><h1>Shopping Cart</h1></header> <!-- End of Header -->
+			
+		<main class="row-2 row container">
 		
-		<main id="main-subgrid" class="main grid-row"> 
-			<div id="login" class="">
-				<h1 class="header">Log in</h1>
-				<form class="main" id="form" method="post">
+			<div id="login" class="row-1">
+			
+				<h1 class="row-1">Login</h1>
+				
+				<form class="row-2" method="post">
 					<fieldset>
 						<input type="text" name="username" placeholder="Username" size="12" maxlength="30"/><br/>
 						<input type="password" name="password" placeholder="Password" size="12" />
 					</fieldset>
 					<input type="submit" value="Submit"/>
 				</form>
-				<div id="login-help" class="footer">
-					<p>Forgot your password ? <a href=""> Click here.</a></p>
-				</div>
-			</div>
-		</main> <!-- End of the Main -->
+				
+				<div id="login-help" class="row-3"><p>Forgot your password ? <a href=""> Click here.</a></p></div>
+				
+			</div> <!-- End login -->
+			
+		</main> <!-- End of Main -->
 		
-		<footer class="footer grid-row"> 
+		<footer class="row-3 row">
 			<p>Copyright &copy; <script type="text/javascript">document.write((new Date()).getFullYear()); </script> - by Bernardo T. de Abreu<br/></p>
 			<ul>
 				<li><a href="https://www.linkedin.com/in/berTrindade" target="_blank">Linkedin</a></li>
 				<li><a href="https://github.com/berTrindade/" target="_blank">Github</a></li>
 			</ul>
-		</footer> <!-- End of the Footer -->
-		
-	</div> <!-- End of the Container -->
+		</footer> <!-- End of Footer -->
+	</div> <!-- End of Container -->
 	
 	<!-- <span>${message}</span> -->
 </body>
 </html>
 
 
+<!-- Use pseudo class selectors on div login -->
 
+	
 
 	
 
-	
+
+
+
