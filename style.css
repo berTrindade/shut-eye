@@ -69,9 +69,11 @@ form { margin: 2px 0; }
 
 form input
 {
-	display: block;
+    display: block;
     padding: 10px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div#login 
