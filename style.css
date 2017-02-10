@@ -76,7 +76,7 @@ form input
     margin-right: auto;
 }
 
-div#login 
+div.login 
 {
 	margin: 0 auto;
 	padding: 10px;
